@@ -6,14 +6,14 @@ Pod::Spec.new do |spec|
     spec.authors                  = ''
     spec.license                  = ''
     spec.summary                  = 'KMMBridgeKickStart sample'
-    spec.vendored_frameworks      = 'build/cocoapods/framework/KMMBridgeKickStartPOC.framework'
+    spec.vendored_frameworks      = 'build/cocoapods/framework/allshared.framework'
                 
     spec.ios.deployment_target = '13.5'
                 
                 
     spec.pod_target_xcconfig = {
         'KOTLIN_PROJECT_PATH' => ':allshared',
-        'PRODUCT_MODULE_NAME' => 'KMMBridgeKickStartPOC',
+        'PRODUCT_MODULE_NAME' => 'allshared',
     }
                 
     spec.script_phases = [
