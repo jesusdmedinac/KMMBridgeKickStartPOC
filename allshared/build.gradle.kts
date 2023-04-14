@@ -40,6 +40,7 @@ kotlin {
         extraSpecAttributes["libraries"] = "'c++', 'sqlite3'"
 
         framework {
+            baseName = "KMMBridgeKickStartPOC"
             export(project(":analytics"))
             isStatic = true
         }
